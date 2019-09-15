@@ -10,13 +10,21 @@ def recuperar(request):
 	numero=request.POST["inputNumber"]
 	correo=request.POST["inputEmail"]
 	carrera=request.POST["input Select"]
-    
+  
 	diccionario={}
 	diccionario["comentario"]=texto 
 	diccionario["comentario2"]=numero
 	diccionario["comentario3"]=correo
 	diccionario["comentario4"]=carrera
+	
+
 
 	return render(request, "envio.html", diccionario)
 def registro(request):
 	return render(request, 'registro.html')
+
+def envio2(request):
+	return render(request, 'envio2.html')
+
+
+
