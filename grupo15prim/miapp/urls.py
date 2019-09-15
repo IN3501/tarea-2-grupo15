@@ -7,4 +7,6 @@ urlpatterns = [
     path("envio", recuperar, name='envio'),
     path('registro/', registro, name='registro'),
     path('envio2/', envio2, name='envio2'),
+    path('envio3/', envio3, name='envio3'),
+    path('sesion/', sesion, name='sesion'),
 ]

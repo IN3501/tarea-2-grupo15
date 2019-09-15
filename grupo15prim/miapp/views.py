@@ -26,5 +26,11 @@ def registro(request):
 def envio2(request):
 	return render(request, 'envio2.html')
 
+def envio3(request):
+	return render(request, 'envio3.html')
+
+def sesion(request):
+	return render(request, 'sesion.html')
+
 
 
