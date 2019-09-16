@@ -31,6 +31,9 @@ def envio3(request):
 
 def sesion(request):
 	return render(request, 'sesion.html')
+	
+def local(request):
+	return render(request, 'local.html')
 
 
 

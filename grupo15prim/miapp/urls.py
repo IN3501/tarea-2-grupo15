@@ -9,4 +9,5 @@ urlpatterns = [
     path('envio2/', envio2, name='envio2'),
     path('envio3/', envio3, name='envio3'),
     path('sesion/', sesion, name='sesion'),
+    path('local/', local, name='local'),
 ]
