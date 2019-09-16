@@ -5,6 +5,20 @@ Inicio
 {% endblock title %}
 
 {% block content %}
-Inicia sesión
+<div id="descripcion" class="container">
+    <h1>Inicia sesión:</h1>
+    <form action="/envio2" method="POST" autocomplete="off">  {% csrf_token %}
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Correo electronico</label>
+      <input type="email" class="form-control" id="exampleemail" placeholder="Ingresa tu email" name="inputemail3">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Contraseña</label>
+      <input type="password" class="form-control" id="examplePassword" placeholder="ingrese contraseña" name="inputPassword2">
+    </div>
+    </form>
+</div>
 
 {% endblock content %}
